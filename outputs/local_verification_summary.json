@@ -1,0 +1,21 @@
+{
+  "status": "PASSED",
+  "total_time_seconds": 1.8,
+  "modules_tested": [
+    "KnowledgeGraph (entities, relations, Jaccard retrieval)",
+    "RAGRetriever (target retrieval, embedding similarity search)",
+    "PromptBuilder (structured prompt, feedback prompt)",
+    "AminoAcidTokenizer (encode, decode, vocab)",
+    "KRPGGenerator (forward, generate, prompt conditioning, training)",
+    "AMPPredictor / RuleBasedAMPPredictor / CompositeScorer",
+    "ToxicityPredictor",
+    "StabilityPredictor",
+    "SimilarityFilter / PhysicochemicalFilter (alignment-aware, pI)",
+    "FeedbackOptimizer (closed-loop spec update)"
+  ],
+  "generated_sequences": 8,
+  "avg_amp_score": 0.4813,
+  "avg_toxicity_score": 0.2935,
+  "avg_stability_score": 0.5045,
+  "avg_composite_score": 0.6459
+}

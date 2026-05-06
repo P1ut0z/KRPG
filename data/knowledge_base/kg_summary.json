@@ -1,0 +1,41 @@
+{
+  "total_entities": 91115,
+  "total_relations": 326881,
+  "entity_types": {
+    "property": 5,
+    "go_term": 3,
+    "pathogen": 2,
+    "motif": 3,
+    "design_rule": 1,
+    "peptide": 20227,
+    "activity_label": 1,
+    "database_record": 30628,
+    "activity_class": 50,
+    "target_class": 8,
+    "target_organism": 4803,
+    "literature_reference": 5860,
+    "activity_assay": 20395,
+    "structure_feature": 1513,
+    "toxicity_assay": 7496,
+    "modification": 120
+  },
+  "peptides_added": 20227,
+  "enrichment": {
+    "dramp": {
+      "dramp_rows_seen": 11612,
+      "dramp_rows_matched": 8814,
+      "database_records": 8814,
+      "activity_assays": 20395,
+      "toxicity_assays": 7496,
+      "references": 18100,
+      "structure_features": 28072
+    },
+    "dbaasp": {
+      "dbaasp_items_seen": 25069,
+      "dbaasp_sequences_matched": 19403,
+      "database_records": 19403,
+      "structure_features": 514,
+      "modifications": 10722
+    }
+  }
+}

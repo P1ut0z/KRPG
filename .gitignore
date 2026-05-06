@@ -1,0 +1,17 @@
+# Local environment
+.env
+.env.*
+.claude/
+
+# Python caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Generated outputs and checkpoints
+outputs/*.pt
+
+# Large generated datasets
+data/raw/uniprot/uniprot_sprot_reviewed_non_amp_background.fasta.gz
+data/knowledge_base/entities.jsonl
+data/knowledge_base/relations.jsonl

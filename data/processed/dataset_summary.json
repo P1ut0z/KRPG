@@ -1,0 +1,51 @@
+{
+  "build_seed": 20260506,
+  "max_generation_len": 50,
+  "source_urls": {
+    "APD6 natural": "https://aps.unmc.edu/assets/sequences/naturalAMPs_APD2024a.fasta",
+    "APD6 animal": "https://aps.unmc.edu/assets/sequences/animalAMPs_APD2024a.fasta",
+    "DRAMP general txt": "https://dramp.cpu-bioinfor.org/downloads/download.php?filename=download_data/DRAMP3.0_new/general_amps.txt",
+    "DRAMP general fasta": "https://dramp.cpu-bioinfor.org/downloads/download.php?filename=download_data/DRAMP3.0_new/general_amps.fasta",
+    "DRAMP antimicrobial txt": "https://dramp.cpu-bioinfor.org/downloads/download.php?filename=download_data/DRAMP3.0_new/Antimicrobial_amps.txt",
+    "DRAMP antimicrobial fasta": "https://dramp.cpu-bioinfor.org/downloads/download.php?filename=download_data/DRAMP3.0_new/Antimicrobial_amps.fasta",
+    "DBAASP REST": "https://dbaasp.org/peptides?limit=1000&offset={offset}",
+    "UniProt background": "https://rest.uniprot.org/uniprotkb/stream?compressed=true&format=fasta&query=%28reviewed%3Atrue%29%20NOT%20%28keyword%3A%22Antimicrobial%20%5BKW-0929%5D%22%20OR%20keyword%3A%22Antibiotic%20%5BKW-0046%5D%22%20OR%20protein_name%3Adefensin%20OR%20protein_name%3Acathelicidin%20OR%20protein_name%3Amagainin%20OR%20protein_name%3Acecropin%29"
+  },
+  "raw_source_counts": {
+    "APD6 natural": 3306,
+    "APD6 animal": 2580,
+    "DRAMP general txt": 11612,
+    "DRAMP general fasta": 11612,
+    "DRAMP antimicrobial fasta": 5626,
+    "DBAASP peptide or monomer": 25855
+  },
+  "curated_positive_unique": 21521,
+  "generation_ready_positive_unique": 20227,
+  "weak_background_rows": 20000,
+  "binary_weak_rows": 40227,
+  "source_database_counts_generation_ready": {
+    "APD6;DRAMP;DBAASP": 1406,
+    "DBAASP": 10977,
+    "APD6": 366,
+    "DRAMP;DBAASP": 3318,
+    "DRAMP": 3058,
+    "APD6;DRAMP": 454,
+    "APD6;DBAASP": 648
+  },
+  "length_min_generation_ready": 5,
+  "length_max_generation_ready": 50,
+  "length_median_generation_ready": 18.0,
+  "outputs": {
+    "main_csv": "data/amp_dataset_clean.csv",
+    "sequence_json": "data/amp_sequences.json",
+    "curated_positive_csv": "data/processed/amp_curated_positive.csv",
+    "generation_train_csv": "data/processed/amp_generation_train.csv",
+    "protein_background_csv": "data/processed/protein_background_filtered.csv",
+    "binary_weak_csv": "data/processed/amp_binary_weak.csv"
+  },
+  "notes": [
+    "Main KRPG generation dataset uses curated AMP positives only.",
+    "UniProt fragments are weak background examples and should not be read as experimentally validated non-AMPs.",
+    "Only standard 20 amino-acid sequences are retained."
+  ]
+}

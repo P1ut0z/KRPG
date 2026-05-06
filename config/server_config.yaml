@@ -1,0 +1,42 @@
+# KRPG Server Full Deployment Configuration
+# 服务器全量部署配置 - 大模型、全量数据、完整训练
+
+model:
+  d_model: 256
+  n_heads: 4
+  n_layers: 6
+  d_ff: 1024
+  max_seq_len: 64
+  dropout: 0.1
+
+training:
+  epochs: 100
+  batch_size: 64
+  learning_rate: 0.0005
+  max_length: 50
+  weight_decay: 0.01
+  warmup_steps: 1000
+
+generation:
+  n_sequences: 500
+  temperature: 0.8
+  top_k: 40
+  top_p: 0.9
+  max_new_tokens: 50
+
+evaluation:
+  amp_threshold: 0.5
+  toxicity_threshold: 0.5
+  stability_threshold: 0.5
+  novelty_threshold: 0.8
+  composite_weights:
+    amp: 0.35
+    toxicity_inv: 0.25
+    stability: 0.20
+    novelty: 0.20
+
+data:
+  use_default: false
+  data_path: "data/amp_sequences.json"
+
+device: cuda

@@ -1,0 +1,8 @@
+Total rows: 20227
+Labels: {'1'}
+Seq length range: 5-50
+Avg length: 19.9
+Lowercase count: 0
+Non-std AA count: 0
+Unique seqs: 20227
+Seqs < 5 AA: 0

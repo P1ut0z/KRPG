@@ -1,0 +1,19 @@
+{
+  "round": 1,
+  "status": "completed",
+  "last_score": 7,
+  "last_verdict": "almost ready",
+  "pending_experiments": [],
+  "timestamp": "2026-04-25T17:30:00",
+  "project": "KRPG - Knowledge-Retrieval Prompted Generator for AMP Design",
+  "fixes_applied": [
+    "Added PromptEncoder + prompt conditioning to KRPGGenerator",
+    "Improved RAG retrieval with Jaccard similarity from KG",
+    "Fixed similarity filter with sliding window alignment",
+    "Added isoelectric point calculation via bisection",
+    "Added CompositeScorer module",
+    "Closed the feedback loop with apply_feedback_to_spec()",
+    "Updated run_local.py and run_server.py",
+    "Expanded tests from 12 to 16"
+  ]
+}
